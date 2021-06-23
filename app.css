@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap");
+
+:root {
+  --skin-color: #fb839e;
+  --bg-black--900: #000000;
+  --bg-black--100: #dddddd;
+  --bg-black--50: #eff0f4;
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-300: #666666;
+  --text-black-600: #bbbbbb;
+
+  --outer-shadow: 3px 3px 3px #d0d0ed, inset -3px -3px -3px #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px -3px #f8f8f8;
+}
+
+/* ----------custom css variable for dark theme------ */
+body.dark {
+  --bg-black--900: #ffffff;
+  --bg-black--100: #353535;
+  --bg-black--50: #000000;
+  --bg-opacity: rgba(43, 44, 47, 0.5);
+  --text-black-700: #ffffff;
+  --text-black-300: #ffffff;
+  --text-black-600: #bbbbbb;
+  --text-black-900: #ffffff;
+  --outer-shadow: 3px 3px 3px #222327, inset -3px -3px -3px #363636;
+  --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px -3px #363636;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: var(--bg-black--50);
+}
+
+*:not(i) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+
+
+.header {
+    padding: 20px 0px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .brandName {
+    font-family: "Dancing Script", cursive;
+    font-size: 33px;
+    color: var(--text-black-900);
+  }
+  
+  .header .bg-light {
+    background-color: transparent !important;
+    z-index: 15;
+  }
+  .header .navbar-light .navbar-nav .nav-item {
+    transition: 0.5s;
+    margin-left: 16px;
+    font-size: 21px;
+    border-bottom: 2px solid transparent;
+  }
+  .header .navbar-light .navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
+    color: var(--text-black-900);
+    transition: 0.5s;
+  }
+  .header .navbar-light .navbar-nav .nav-link:hover {
+    color: #e74c3c;
+  }
+  .header .navbar-light .navbar-nav .nav-item:hover {
+  }
+  .hvr-underline-from-center::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #e74c3c;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  /* .navbar-light .navbar-toggler {
+    border-color: #fff;
+    background: #fff;
+  } */
+  
+  .header nav ul {
+    margin-left: 531px;
+  }
+  
+  .header .logo a {
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    color: var(--skin-color);
+    border-radius: 50%;
+    border: 2px solid var(---skin-color);
+    font-weight: 600;
+  }
+  
+  .humburger-btn {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .humburger-btn span {
+    display: block;
+    height: 2px;
+    width: 16px;
+    background-color: var(--bg-black--900);
+    position: relative;
+  }
+  
+  .header .humburger-btn span::before,
+  .header .humburger-btn span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-black--900);
+  }
+  
+  .header .humburger-btn span::before {
+    top: -6px;
+  }
+  
+  .header .humburger-btn span::after {
+    top: 6px;
+  }
+  
+  .sticky {
+    background: #000 !important;
+    padding: 10px 0px;
+    transition: 1s;
+    width: 100%;
+    z-index: 15;
+    top: 0px;
+    position: fixed;
+    color: whitesmoke;
+  }
