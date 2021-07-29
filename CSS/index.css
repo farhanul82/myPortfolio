@@ -502,7 +502,7 @@ img {
 .btn-brand-main {
   background: transparent;
   color: white;
-  border: 2px solid #62e9b0;
+  /* border: 2px solid #62e9b0; */
   transition: 0.6s;
   color: var(--bg-black--900);
   font-size: 15px;
@@ -531,6 +531,12 @@ img {
 
   text-transform: uppercase;
   color: var(--text-black-900);
+}
+
+.project_Link_Div{
+  height: 40px;
+    padding-bottom: 5px;
+    margin-top: 25px;
 }
 
 /* .serviceimgDiv {
@@ -634,7 +640,9 @@ display: inline;
 .cv-button {
   width: 205px;
   padding: 10px;
-  font-size: 24px;
+  font-size: 22px;
+
+  font-weight: 900;
   color: white;
   border-radius: 30px;
   background:#079459 ;
@@ -735,6 +743,7 @@ display: inline;
 }
 .skill-section .skill-img .img-box {
   width: 16%;
+  border-radius: 30px;
   color: whitesmoke;
   padding: 20px 40px;
   background: rgb(25 25 24);
@@ -801,6 +810,12 @@ display: inline;
   /* width: 300px; */
   margin: 20px;
   border-radius: 15px;
+}
+
+.project-itm-img img{
+  border-radius: 12px;
+    padding-top: 0px;
+    margin-top: 2px;
 }
 
 .project_item::after {
@@ -1592,6 +1607,9 @@ textarea.input {
   .cv-button{
     width: 100%;
     font-size: 20px;
+    
+    padding: 6px 35px;
+
   }
 
   .mid_part{
@@ -1639,7 +1657,7 @@ textarea.input {
   .cv-button{
     width: 100%;
     font-size: 16px;
-    padding: 10px;
+    padding: 10px 35px;
   }
 
   .skill-section .skill-img .img-box{
@@ -1686,6 +1704,7 @@ textarea.input {
   .cv-button{
     width: 100%;
     font-size: 14px;
+    padding: 6px 46px;
   }
 
   .meta_ans{
