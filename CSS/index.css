@@ -1731,6 +1731,11 @@ textarea.input {
 
   .service_section .carousel-inner{
     width: 100%;
+    height: auto;
     margin-left: 7%;
+  }
+
+  .carousel-indicators{
+    margin-left: 16%;
   }
 }
