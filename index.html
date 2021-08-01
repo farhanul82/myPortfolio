@@ -28,6 +28,8 @@
         <link rel="stylesheet" href="./hover-min.css">
         <link rel="stylesheet" href="./jquery.animatedheadline.css">
 
+        
+
 
         <title>Farhanul_Islam</title>
     </head>
@@ -1959,34 +1961,35 @@
                         <div class="contact_form outer-shadow">
                             <span class="circle one"></span>
                             <span class="circle two"></span>
-
-                            <form action="https://formspree.io/f/xwkwqjlj"
-                                autocomplete="off" method="post">
+                            <!-- action="https://formspree.io/f/xwkwqjlj"
+                            autocomplete="off" method="post" -->
+                            <form id="contact-form" >
                                 <h3 class="form_title">Contact me</h3>
                                 <div class="input-container focus">
-                                    <input type="text" name="name" class="input"
+                                    <input type="text" name="name" class="input" id= 'name'
                                         />
                                     <label for="">Username</label>
                                     <span>Username</span>
                                 </div>
                                 <div class="input-container focus">
-                                    <input type="email" name="email"
+                                    <input type="email" name="email" id= 'email'
                                         class="input" />
                                     <label for="">Email</label>
                                     <span>Email</span>
                                 </div>
                                 <div class="input-container focus">
-                                    <input type="tel" name="phone" class="input"
+                                    <input type="tel" name="phone" class="input" id= 'phone'
                                         />
                                     <label for="">Phone</label>
                                     <span>Phone</span>
                                 </div>
                                 <div class="input-container textarea">
-                                    <textarea name="message" class="input"></textarea>
+                                    <textarea name="message" class="input" id= 'message'></textarea>
                                     <label for="">Message</label>
                                     <span>Message</span>
                                 </div>
-                                <button type="submit" class="btn btn-brand-main
+                                
+                                <button type="submit"  value="Send" class="btn btn-brand-main
                                     hvr-icon-bob"><i class="fas fa-paper-plane
                                         hvr-icon"></i>
                                     Send Email</button>
@@ -2047,6 +2050,13 @@
         new WOW().init();
     </script>
         <script src="./app.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_pOGb6E2NJ3y6kRsC4uJJy");
+})();
+</script>
+        
         <!-- Option 2: Separate Popper and Bootstrap JS -->
         <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>

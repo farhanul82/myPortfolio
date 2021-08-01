@@ -122,3 +122,21 @@ $(function () {
 });
 
 
+subForm = document.getElementById('contact-form')
+
+
+subForm.addEventListener('submit',function sendMail(event){
+  event.preventDefault()
+  const tempParams = {
+    name:document.getElementById('name').value,
+    email:document.getElementById('email').value,
+    phone:document.getElementById('phone').value,
+    message:document.getElementById('message').value,
+  }
+
+  emailjs.send('service_orc56vd','template_spwc6xa',tempParams).then(function(res){
+    console.log('successful',res.status)
+  })
+})
+
+
